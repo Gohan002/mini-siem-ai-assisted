@@ -2,7 +2,7 @@
 
 Ten plik pokazuje **sposób pracy**, a nie historię rozmów z AI.
 
-Nie chodziło mi o kopiowanie gotowych odpowiedzi. Największą wartością było nauczenie się, jak przekazać modelowi odpowiedni kontekst, postawić jasny cel, przetestować rezultat i wrócić z kolejną iteracją.
+Nie chodziło mi o kopiowanie gotowych odpowiedzi. Największą wartością było nauczenie się, jak przekazać modelowi odpowiedni kontekst, postawić jasny cel, przetestować rezultat i wrócić z kolejnymi poprawkami.
 
 ---
 
@@ -28,7 +28,7 @@ Sprawdzam wynik na realnych danych i działającym systemie.
 **6. Wracam z wynikiem**  
 Jeśli coś nie działa, przekazuję AI logi, screen, błąd lub nowe dane i zawężam problem.
 
-To pozwalało mi szybko iterować bez zgadywania.
+To pozwalało mi szybko wprowadzać zmiany bez zgadywania.
 
 ---
 
@@ -51,11 +51,11 @@ przekazałem modelowi:
 - surowe logi,
 - identyfikatory zdarzeń,
 - informację, jak działa obecna reguła,
-- wymaganie, aby ograniczyć false positive bez wyłączania prawdziwej detekcji.
+- wymaganie, aby ograniczyć fałszywe alarmy bez wyłączania prawdziwej detekcji.
 
 ### Przykładowa forma promptu
 
-> „Przeanalizuj poniższe zdarzenia i ustal, czy obecna reguła błędnie traktuje normalną aktywność systemową jako eskalację uprawnień. Zależy mi na ograniczeniu false positive, ale nie chcę wyłączać całej klasy detekcji. Najpierw wyjaśnij wzorzec w danych, a dopiero potem zaproponuj zmianę.”
+> „Przeanalizuj poniższe zdarzenia i ustal, czy obecna reguła błędnie traktuje normalną aktywność systemową jako eskalację uprawnień. Zależy mi na ograniczeniu fałszywych alarmów, ale nie chcę wyłączać całego mechanizmu wykrywania. Najpierw wyjaśnij wzorzec w danych, a dopiero potem zaproponuj zmianę.”
 
 ### Rezultat
 
@@ -77,13 +77,13 @@ Przekazałem AI:
 
 - przykładowe rekordy sieciowe,
 - zachowanie obecnej reguły,
-- przykłady false positive,
+- przykłady fałszywych alarmów,
 - oczekiwany rezultat,
 - warunek: nie stosować prostego „wyciszenia” całego hosta.
 
 ### Przykładowa forma promptu
 
-> „Nie chcę whitelistować całego komputera, bo wtedy prawdziwe zagrożenie z tego hosta też zostałoby ukryte. Zaproponuj sposób odróżnienia zwykłych połączeń wychodzących od zachowania rzeczywiście przypominającego skanowanie.”
+> „Nie chcę wyciszać alertów dla całego komputera, bo wtedy prawdziwe zagrożenie z tego hosta też zostałoby ukryte. Zaproponuj sposób odróżnienia zwykłych połączeń wychodzących od zachowania rzeczywiście przypominającego skanowanie.”
 
 ### Rezultat
 
@@ -97,7 +97,7 @@ Logika została zawężona do bardziej sensownych wzorców zamiast prostego alar
 
 ### Problem
 
-Po dodaniu nowej funkcji dashboard przestał poprawnie pobierać dane i zwracał błąd 500.
+Po dodaniu nowej funkcji dashboard przestał poprawnie pobierać dane i zwracał błąd.
 
 ### Podejście
 
@@ -110,7 +110,7 @@ Zamiast opisywać problem z pamięci, dostarczyłem:
 
 ### Rezultat
 
-Błąd został szybko zawężony do konfliktu nazwy parametru z wbudowaną funkcją języka.
+Błąd został szybko rozwiązany.
 
 **Wniosek:** przy debugowaniu jakość danych wejściowych dla LLM jest ważniejsza niż długość promptu.
 
@@ -127,13 +127,12 @@ Największą różnicę robi:
 - **ograniczenia** — czego rozwiązanie nie może zepsuć,
 - **dane** — przykłady są lepsze niż ogólne opisy,
 - **weryfikacja** — odpowiedź AI to hipoteza, dopóki jej nie sprawdzę,
-- **iteracja** — kolejne prompty powinny wykorzystywać wynik poprzedniego testu.
 
 ---
 
 ## 6. Jak wykorzystałbym ten sposób pracy w danych biznesowych?
 
-Ten sam workflow można zastosować do codziennych zadań analitycznych.
+Ten sam proces można zastosować do codziennych zadań analitycznych.
 
 Przykład:
 
