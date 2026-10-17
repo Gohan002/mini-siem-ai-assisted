@@ -56,7 +56,7 @@ Projekt pokazuje nie tylko efekt końcowy, ale przede wszystkim sposób pracy:
 - automatyzację powtarzalnych czynności,
 - pracę z dużą liczbą danych,
 - analizę błędów na podstawie realnych wyników,
-- iteracyjne ulepszanie rozwiązania.
+- cykliczne wdrażanie poprawek i ulepszeń.
 
 ---
 
