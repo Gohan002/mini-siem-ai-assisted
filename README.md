@@ -1,12 +1,12 @@
 # Mini SIEM — AI-Assisted Automation Project
 
-> **Portfolio / case study:** projekt pokazujący, jak wykorzystuję AI do szybkiej nauki, pracy z danymi, automatyzacji i dowożenia działających rozwiązań od pomysłu do gotowego efektu.
+> **Portfolio / case study:** projekt pokazujący, jak wykorzystuję AI do szybkiej nauki, pracy z danymi, automatyzacji i wdrażania działających rozwiązań od pomysłu do gotowego efektu.
 
 Mini SIEM to mój projekt własny: system, który automatycznie zbiera dane z logów Windows, porządkuje je, analizuje i pokazuje najważniejsze informacje w czytelnym panelu.
 
 Projekt rozwijałem intensywnie z pomocą narzędzi LLM, traktując AI nie jako „generator odpowiedzi”, ale jako **asystenta, nauczyciela i partnera do rozwiązywania problemów**.
 
-> Kod źródłowy nie jest publikowany w całości. To repozytorium jest celowo przygotowane jako **case study procesu, efektu i sposobu pracy z AI**.
+> To repozytorium jest przygotowane jako **case study procesu, efektu i sposobu pracy z AI**.
 
 ---
 
@@ -35,7 +35,7 @@ Najważniejsze było dla mnie nie samo „zrobienie aplikacji”, ale stworzenie
 
 Chciałem sprawdzić, jak daleko można dojść, wykorzystując AI jako codzienne narzędzie do pracy.
 
-Założyłem sobie ambitny cel: zbudować kompletny, działający system, mimo że część potrzebnych narzędzi i zagadnień poznawałem dopiero w trakcie projektu.
+Założyłem sobie cel: zbudować kompletny, działający system, mimo że część potrzebnych narzędzi i zagadnień poznawałem dopiero w trakcie projektu.
 
 Dzięki temu ćwiczyłem jednocześnie:
 
@@ -113,7 +113,7 @@ To właśnie obszar **AI + dane + automatyzacja** chcę rozwijać dalej.
 
 ## System w praktyce
 
-Poniższe miejsca są przygotowane na kilka najlepszych screenshotów działającego systemu.
+Poniżej przedstawiam kilka najlepszych screenshotów działającego systemu.
 
 ### Dashboard
 
